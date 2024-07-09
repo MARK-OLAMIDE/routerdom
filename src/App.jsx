@@ -5,12 +5,16 @@ import Home from './components/Home';
 import Contact from './components/Contact';
 import Nav from './components/Nav';
 import About from './components/About';
+import Task from './Task';
+import Button from './components/Button';
 
 function App() {
   return (
     <>  
       <Nav />
       <h1>Welcome Home</h1>
+      <Task myHeader='Task Tracker'/>
+      <Button text='Add'/>
       <Routes>
         <Route path="/" element={App} />
         <Route path="/home" element={<Home />} />
